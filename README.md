@@ -1,4 +1,4 @@
-# Mindful Motion
+# Motional
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@
 
 ### Description
 
-Mindful Motion is an app that seamlessly combines guided mindfulness meditation with easy-to-follow at-home workout routines. Users have the flexibility to tailor their sessions based on duration, difficulty level, and specific focus areas, fostering a comprehensive approach to mental and physical well-being.
+**Motional** is an app that seamlessly combines guided mindfulness meditation with easy-to-follow at-home workout routines. Users have the flexibility to tailor their sessions based on duration, difficulty level, and specific focus areas, fostering a comprehensive approach to mental and physical well-being.
 
 ### App Evaluation
 
