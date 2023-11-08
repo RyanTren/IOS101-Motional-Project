@@ -9,7 +9,7 @@
 
 ## Overview
 
-![Mindful Motion Wireframes](<img src=["YOUR_IMAGE_URL_HERE"](https://cdn.discordapp.com/attachments/803439001138757642/1171924486409441420/IMG_0119.jpg?ex=655e72ba&is=654bfdba&hm=e30b8e6ad5b13248805ffa37fb6907956f13034e1e71758cc3aad35df492f8a6&) width=600>)
+![Mindful Motion Wireframes](https://cdn.discordapp.com/attachments/803439001138757642/1171924486409441420/IMG_0119.jpg?ex=655e72ba&is=654bfdba&hm=e30b8e6ad5b13248805ffa37fb6907956f13034e1e71758cc3aad35df492f8a6&)
 
 ### Description
 
@@ -68,7 +68,7 @@
 
 ## Wireframes
 
-![Mindful Motion Hand-Sketched Wireframes](<img src=["YOUR_IMAGE_URL_HERE"](https://cdn.discordapp.com/attachments/803439001138757642/1171924486409441420/IMG_0119.jpg?ex=655e72ba&is=654bfdba&hm=e30b8e6ad5b13248805ffa37fb6907956f13034e1e71758cc3aad35df492f8a6&) width=600>)
+![Mindful Motion Hand-Sketched Wireframes](https://cdn.discordapp.com/attachments/803439001138757642/1171924486409441420/IMG_0119.jpg?ex=655e72ba&is=654bfdba&hm=e30b8e6ad5b13248805ffa37fb6907956f13034e1e71758cc3aad35df492f8a6&)
 
 ### [BONUS] Digital Wireframes & Mockups
 
