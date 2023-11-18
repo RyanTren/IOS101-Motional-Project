@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ExerciseListViewController.swift
 import UIKit
 
@@ -70,11 +71,25 @@ class ExerciseListViewController: UIViewController, UITableViewDataSource, UITab
 
 import UIKit
 
+=======
+//
+//  ViewController.swift
+//  Motional
+//
+//  Created by Ryan on 11/7/23.
+//
+
+import UIKit
+
+>>>>>>> parent of 0a9ddcf (Added Contents)
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+<<<<<<< HEAD
+>>>>>>> parent of 0a9ddcf (Added Contents)
+=======
 >>>>>>> parent of 0a9ddcf (Added Contents)
     }
 
