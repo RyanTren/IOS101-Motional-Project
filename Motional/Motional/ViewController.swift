@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ExerciseListViewController.swift
 import UIKit
 
@@ -59,5 +60,24 @@ class ExerciseListViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         // Handle row selection, e.g., navigate to a detail view
+=======
+//
+//  ViewController.swift
+//  Motional
+//
+//  Created by Ryan on 11/7/23.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+>>>>>>> parent of 0a9ddcf (Added Contents)
     }
+
+
 }
+
