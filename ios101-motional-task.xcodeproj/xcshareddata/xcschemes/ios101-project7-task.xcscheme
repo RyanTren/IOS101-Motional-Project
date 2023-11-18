@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1430"
+   LastUpgradeVersion = "1500"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB602B9429247359006C6727"
-               BuildableName = "ios101-project7-task.app"
-               BlueprintName = "ios101-project7-task"
-               ReferencedContainer = "container:ios101-project7-task.xcodeproj">
+               BuildableName = "ios101-motional-task.app"
+               BlueprintName = "ios101-motional-task"
+               ReferencedContainer = "container:ios101-motional-task.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB602B9429247359006C6727"
-            BuildableName = "ios101-project7-task.app"
-            BlueprintName = "ios101-project7-task"
-            ReferencedContainer = "container:ios101-project7-task.xcodeproj">
+            BuildableName = "ios101-motional-task.app"
+            BlueprintName = "ios101-motional-task"
+            ReferencedContainer = "container:ios101-motional-task.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB602B9429247359006C6727"
-            BuildableName = "ios101-project7-task.app"
-            BlueprintName = "ios101-project7-task"
-            ReferencedContainer = "container:ios101-project7-task.xcodeproj">
+            BuildableName = "ios101-motional-task.app"
+            BlueprintName = "ios101-motional-task"
+            ReferencedContainer = "container:ios101-motional-task.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -12,7 +12,7 @@
         <!--Tasks-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TaskListViewController" customModule="ios101_project7_task" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TaskListViewController" customModule="ios101_motional_task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                                 <inset key="separatorInset" minX="48" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="66" id="WLA-WM-GNM" customClass="TaskCell" customModule="ios101_project7_task" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="66" id="WLA-WM-GNM" customClass="TaskCell" customModule="ios101_motional_task" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WLA-WM-GNM" id="BXc-Af-m5v">
@@ -144,7 +144,7 @@
         <!--New Task-->
         <scene sceneID="Ioe-a1-6Ta">
             <objects>
-                <viewController id="fZK-XV-ZSw" customClass="TaskComposeViewController" customModule="ios101_project7_task" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fZK-XV-ZSw" customClass="TaskComposeViewController" customModule="ios101_motional_task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qrs-jQ-4tq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +213,7 @@
         <!--Calendar-->
         <scene sceneID="nUV-mr-s5n">
             <objects>
-                <viewController id="JYA-x1-l0b" customClass="CalendarViewController" customModule="ios101_project7_task" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JYA-x1-l0b" customClass="CalendarViewController" customModule="ios101_motional_task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ylo-qW-iAq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,7 +236,7 @@
                                         <rect key="frame" x="0.0" y="545" width="390" height="299"/>
                                         <inset key="separatorInset" minX="48" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="66" id="tgw-OL-53i" customClass="TaskCell" customModule="ios101_project7_task" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="66" id="tgw-OL-53i" customClass="TaskCell" customModule="ios101_motional_task" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="55.333332061767578" width="350" height="66"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tgw-OL-53i" id="1ce-vD-QKC">
@@ -341,11 +341,11 @@
             </objects>
             <point key="canvasLocation" x="3730.7692307692305" y="-716.5876777251184"/>
         </scene>
-        <!--Calendar-->
+        <!--Routine-->
         <scene sceneID="Ijw-fb-yMF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="daT-oS-uAW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="t9z-Gp-dDc"/>
+                    <tabBarItem key="tabBarItem" title="Routine" image="calendar" catalog="system" id="t9z-Gp-dDc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0bE-gs-in2">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -366,6 +366,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fMc-nk-pDD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ayG-EX-nLc">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

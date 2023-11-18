@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB602B9529247359006C6727 /* ios101-project7-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios101-project7-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB602B9529247359006C6727 /* ios101-motional-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios101-motional-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB602B9829247359006C6727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB602B9A29247359006C6727 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CB602B9C29247359006C6727 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		CB602B9629247359006C6727 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB602B9529247359006C6727 /* ios101-project7-task.app */,
+				CB602B9529247359006C6727 /* ios101-motional-task.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB602B9429247359006C6727 /* ios101-project7-task */ = {
+		CB602B9429247359006C6727 /* ios101-motional-task */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB602BA92924735C006C6727 /* Build configuration list for PBXNativeTarget "ios101-project7-task" */;
+			buildConfigurationList = CB602BA92924735C006C6727 /* Build configuration list for PBXNativeTarget "ios101-motional-task" */;
 			buildPhases = (
 				CB602B9129247359006C6727 /* Sources */,
 				CB602B9229247359006C6727 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = "ios101-project7-task";
+			name = "ios101-motional-task";
 			productName = "lab-task-squirrel";
-			productReference = CB602B9529247359006C6727 /* ios101-project7-task.app */;
+			productReference = CB602B9529247359006C6727 /* ios101-motional-task.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,14 +107,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					CB602B9429247359006C6727 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = CB602B9029247359006C6727 /* Build configuration list for PBXProject "ios101-project7-task" */;
+			buildConfigurationList = CB602B9029247359006C6727 /* Build configuration list for PBXProject "ios101-motional-task" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB602B9429247359006C6727 /* ios101-project7-task */,
+				CB602B9429247359006C6727 /* ios101-motional-task */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +218,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -278,6 +279,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -357,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB602B9029247359006C6727 /* Build configuration list for PBXProject "ios101-project7-task" */ = {
+		CB602B9029247359006C6727 /* Build configuration list for PBXProject "ios101-motional-task" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB602BA72924735C006C6727 /* Debug */,
@@ -366,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB602BA92924735C006C6727 /* Build configuration list for PBXNativeTarget "ios101-project7-task" */ = {
+		CB602BA92924735C006C6727 /* Build configuration list for PBXNativeTarget "ios101-motional-task" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB602BAA2924735C006C6727 /* Debug */,
