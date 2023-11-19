@@ -8,7 +8,22 @@
 4. [Schema](#schema)
 
 ## Overview
+Video:
+<div>
+    <a href="https://www.loom.com/share/bf1ebda81f91438697114042bcff4ff0">
+    </a>
+    <a href="https://www.loom.com/share/bf1ebda81f91438697114042bcff4ff0">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/bf1ebda81f91438697114042bcff4ff0-with-play.gif">
+    </a>
+  </div>
+ 
+ [x] created tab bar controller
+ [x] created home and profile viewcontrollers w/ table view and cells
+ [x] implemented exercies api (TLDR: The Exercises API provides access a comprehensive list of thousands of exercises targeting every major muscle group.)
 
+Things to Fix
+ [] api doesn't print anything in table view cell
+ 
 ![Mindful Motion Wireframes](https://cdn.discordapp.com/attachments/803439001138757642/1171924486409441420/IMG_0119.jpg?ex=655e72ba&is=654bfdba&hm=e30b8e6ad5b13248805ffa37fb6907956f13034e1e71758cc3aad35df492f8a6&)
 
 ### Description
