@@ -33,7 +33,6 @@ class PlaceholderCell: UITableViewCell {
 class FeedViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    
     // Add property to store fetched exercises array
     private var exercises: [Exercise] = []
     
@@ -72,7 +71,7 @@ class FeedViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if exercises.isEmpty {
             // If there are no exercises, display a styled placeholder cell
-            tableView.register(ExerciseCell.self, forCellReuseIdentifier: "ExerciseCell")
+//            tableView.register(ExerciseCell.self, forCellReuseIdentifier: "ExerciseCell")
 
             let placeholderCell = tableView.dequeueReusableCell(withIdentifier: "PlaceholderCell", for: indexPath)
             placeholderCell.textLabel?.text = "No exercises available"
@@ -83,7 +82,6 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         } else {
             // If there are exercises, configure and return the ExerciseCell
             let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell", for: indexPath) as! ExerciseCell
-
             let exercise = exercises[indexPath.row]
 
             // Configure the cell
@@ -91,58 +89,12 @@ class FeedViewController: UIViewController, UITableViewDataSource {
             cell.muscleLabel.text = exercise.muscle
             cell.instructionsLabel.text = exercise.instructions
 
+
             // Add any additional configuration needed for ExerciseCell
 
             return cell
         }
     }
-//    func fetchExercises() {
-//        let apiUrl = "https://api.api-ninjas.com/v1/exercises?muscle=chest"
-//        let apiKey = "2UWlXCA5qrTw12FiCTmXIw==8EyVf8NrBbeC6YMm"
-//
-//        guard let url = URL(string: apiUrl) else {
-//            print("Invalid URL")
-//            return
-//        }
-//
-//        var request = URLRequest(url: url)
-//        request.setValue(apiKey, forHTTPHeaderField: "Api-Key")
-//
-//        URLSession.shared.dataTask(with: request) { data, response, error in
-//            if let error = error {
-//                print("Error fetching data: \(error)")
-//                return
-//            }
-//
-//            if let httpResponse = response as? HTTPURLResponse {
-//                print("Status code: \(httpResponse.statusCode)")
-//            }
-//
-//            if let data = data {
-//                do {
-//                    // Decode the response into a dictionary
-//                    if let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-//                        // Assuming the structure is like {"exercises": [...]}, extract the array
-//                        if let exercisesArray = jsonDictionary["exercises"] as? [[String: Any]] {
-//                            // Now try to decode the array of exercises
-//                            let decodedExercises = try JSONDecoder().decode([Exercise].self, from: JSONSerialization.data(withJSONObject: exercisesArray))
-//                            
-//                            // Print the decoded exercises for debugging
-//                            print("Decoded Exercises: \(decodedExercises)")
-//                            
-//                            // Update the UI on the main thread
-//                            DispatchQueue.main.async { [weak self] in
-//                                self?.exercises = decodedExercises
-//                                self?.tableView.reloadData()
-//                            }
-//                        }
-//                    }
-//                } catch {
-//                    print("Error decoding exercises: \(error)")
-//                }
-//            }
-//        }.resume()
-//    }
 
     func fetchExercises(completion: @escaping ([Exercise]?) -> Void) {
         guard let apiUrl = URL(string: "https://api.api-ninjas.com/v1/exercises?muscle=chest") else {
@@ -168,6 +120,5 @@ class FeedViewController: UIViewController, UITableViewDataSource {
             }
         }.resume()
     }
-
 }
 
