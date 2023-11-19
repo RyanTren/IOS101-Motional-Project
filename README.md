@@ -17,12 +17,12 @@ Video:
     </a>
   </div>
  
- [x] created tab bar controller
- [x] created home and profile viewcontrollers w/ table view and cells
- [x] implemented exercies api (TLDR: The Exercises API provides access a comprehensive list of thousands of exercises targeting every major muscle group.)
+ - [x] created tab bar controller
+ -  [x] created home and profile viewcontrollers w/ table view and cells
+ - [x] implemented exercies api (TLDR: The Exercises API provides access a comprehensive list of thousands of exercises targeting every major muscle group.)
 
 Things to Fix
- [] api doesn't print anything in table view cell
+ - [] api doesn't print anything in table view cell
  
 ![Mindful Motion Wireframes](https://cdn.discordapp.com/attachments/803439001138757642/1171924486409441420/IMG_0119.jpg?ex=655e72ba&is=654bfdba&hm=e30b8e6ad5b13248805ffa37fb6907956f13034e1e71758cc3aad35df492f8a6&)
 
