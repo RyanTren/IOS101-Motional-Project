@@ -1,9 +1,5 @@
 import Foundation
 
-//struct ExerciseFeed: Decodable {
-//    let exercises: [Exercise]
-//}
-
 struct Exercise: Codable {
     let name: String
     let type: String
@@ -44,3 +40,4 @@ extension Exercise {
         }
     }
 }
+

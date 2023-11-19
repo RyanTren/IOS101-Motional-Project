@@ -12,10 +12,14 @@ class ExerciseCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     
-    @IBOutlet weak var muscleLabel: UILabel!
-    
-    @IBOutlet weak var instructionsLabel: UILabel!
-    
+    func configure(with exercise: Exercise) {
+        print("Exercise name: \(exercise.name)")
+        nameLabel?.text = exercise.name
+        //nameLabel?.textColor = .black
+    }
+
+
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
