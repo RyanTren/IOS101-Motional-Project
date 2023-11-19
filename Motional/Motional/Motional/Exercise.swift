@@ -1,38 +1,28 @@
-//
-//  Exercise.swift
-//  Motional
-//
-//  Created by Ryan on 11/18/23.
-//
-
 import Foundation
 
-struct ExerciseFeed: Decodable {
-    let results: [Exercise]
-}
+//struct ExerciseFeed: Decodable {
+//    let exercises: [Exercise]
+//}
 
 struct Exercise: Codable, Equatable {
     let name: String
-    let instructions: String
     let type: String
-
-    // Additional properties specific to exercises
     let muscle: String
     let equipment: String
     let difficulty: String
+    let instructions: String
 
-    // Custom coding keys for mapping
+    // Add CodingKeys to map the properties to JSON keys
     enum CodingKeys: String, CodingKey {
         case name
-        case instructions
         case type
         case muscle
         case equipment
         case difficulty
+        case instructions
     }
 }
 
-// Additional functionality for Exercise struct
 extension Exercise {
     static var favoritesKey: String {
         return "ExerciseFavorites"
@@ -54,4 +44,3 @@ extension Exercise {
         }
     }
 }
-

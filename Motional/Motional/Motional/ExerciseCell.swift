@@ -9,9 +9,12 @@ import UIKit
 
 class ExerciseCell: UITableViewCell {
 
+    
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var instructionsLabel: UILabel!
+    
     @IBOutlet weak var muscleLabel: UILabel!
+    
+    @IBOutlet weak var instructionsLabel: UILabel!
     
     
     override func awakeFromNib() {
