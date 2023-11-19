@@ -1,6 +1,5 @@
 // FeedViewController.swift
 import UIKit
-import UIKit
 
 class PlaceholderCell: UITableViewCell {
     let messageLabel: UILabel = {
@@ -50,18 +49,31 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         // Set the background color for visibility
         tableView.backgroundColor = UIColor.lightGray
 
-        // Call fetchExercises to load data
-        fetchExercises()
+        // Call fetchExercises to load data for the chest muscle
+        fetchExercises { (exercises) in
+            if let exercises = exercises {
+                // Do something with the fetched exercises
+                print("Fetched exercises: \(exercises)")
+            } else {
+                // Handle the case where fetching exercises failed
+                print("Failed to fetch exercises")
+            }
+        }
+
     }
+
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exercises.isEmpty ? 1 : exercises.count
+        return max(exercises.count, 10)
     }
+
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if exercises.isEmpty {
             // If there are no exercises, display a styled placeholder cell
+            tableView.register(ExerciseCell.self, forCellReuseIdentifier: "ExerciseCell")
+
             let placeholderCell = tableView.dequeueReusableCell(withIdentifier: "PlaceholderCell", for: indexPath)
             placeholderCell.textLabel?.text = "No exercises available"
             placeholderCell.textLabel?.textColor = .gray
@@ -84,48 +96,78 @@ class FeedViewController: UIViewController, UITableViewDataSource {
             return cell
         }
     }
+//    func fetchExercises() {
+//        let apiUrl = "https://api.api-ninjas.com/v1/exercises?muscle=chest"
+//        let apiKey = "2UWlXCA5qrTw12FiCTmXIw==8EyVf8NrBbeC6YMm"
+//
+//        guard let url = URL(string: apiUrl) else {
+//            print("Invalid URL")
+//            return
+//        }
+//
+//        var request = URLRequest(url: url)
+//        request.setValue(apiKey, forHTTPHeaderField: "Api-Key")
+//
+//        URLSession.shared.dataTask(with: request) { data, response, error in
+//            if let error = error {
+//                print("Error fetching data: \(error)")
+//                return
+//            }
+//
+//            if let httpResponse = response as? HTTPURLResponse {
+//                print("Status code: \(httpResponse.statusCode)")
+//            }
+//
+//            if let data = data {
+//                do {
+//                    // Decode the response into a dictionary
+//                    if let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+//                        // Assuming the structure is like {"exercises": [...]}, extract the array
+//                        if let exercisesArray = jsonDictionary["exercises"] as? [[String: Any]] {
+//                            // Now try to decode the array of exercises
+//                            let decodedExercises = try JSONDecoder().decode([Exercise].self, from: JSONSerialization.data(withJSONObject: exercisesArray))
+//                            
+//                            // Print the decoded exercises for debugging
+//                            print("Decoded Exercises: \(decodedExercises)")
+//                            
+//                            // Update the UI on the main thread
+//                            DispatchQueue.main.async { [weak self] in
+//                                self?.exercises = decodedExercises
+//                                self?.tableView.reloadData()
+//                            }
+//                        }
+//                    }
+//                } catch {
+//                    print("Error decoding exercises: \(error)")
+//                }
+//            }
+//        }.resume()
+//    }
 
-    func fetchExercises() {
-        let apiUrl = "https://api.api-ninjas.com/v1/exercises?muscle=legs"
-        let apiKey = "2UWlXCA5qrTw12FiCTmXIw==8EyVf8NrBbeC6YMm"
-
-        guard let url = URL(string: apiUrl) else {
-            print("Invalid URL")
+    func fetchExercises(completion: @escaping ([Exercise]?) -> Void) {
+        guard let apiUrl = URL(string: "https://api.api-ninjas.com/v1/exercises?muscle=chest") else {
+            completion(nil)
             return
         }
 
-        var request = URLRequest(url: url)
-        request.setValue(apiKey, forHTTPHeaderField: "Api-Key")
+        var request = URLRequest(url: apiUrl)
+        request.setValue("2UWlXCA5qrTw12FiCTmXIw==8EyVf8NrBbeC6YMm", forHTTPHeaderField: "X-Api-Key")  // Replace YOUR_API_KEY with your actual API key
 
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if let error = error {
-                print("Error fetching data: \(error)")
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let data = data, error == nil else {
+                completion(nil)
                 return
             }
 
-            if let data = data {
-                do {
-                    // Decode the response into a dictionary
-                    if let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                        // Assuming the structure is like {"exercises": [...]}, extract the array
-                        if let exercisesArray = jsonDictionary["exercises"] as? [[String: Any]] {
-                            // Now try to decode the array of exercises
-                            let decodedExercises = try JSONDecoder().decode([Exercise].self, from: JSONSerialization.data(withJSONObject: exercisesArray))
-                            
-                            // Update the UI on the main thread
-                            DispatchQueue.main.async { [weak self] in
-                                self?.exercises = decodedExercises
-                                self?.tableView.reloadData()
-                            }
-                        }
-                    }
-                } catch {
-                    print("Error decoding exercises: \(error)")
-                }
+            do {
+                let exercises = try JSONDecoder().decode([Exercise].self, from: data)
+                completion(exercises)
+            } catch {
+                print("Error decoding JSON: \(error)")
+                completion(nil)
             }
         }.resume()
     }
-
 
 }
 

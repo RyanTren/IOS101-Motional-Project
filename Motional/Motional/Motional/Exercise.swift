@@ -4,7 +4,7 @@ import Foundation
 //    let exercises: [Exercise]
 //}
 
-struct Exercise: Codable, Equatable {
+struct Exercise: Codable {
     let name: String
     let type: String
     let muscle: String
