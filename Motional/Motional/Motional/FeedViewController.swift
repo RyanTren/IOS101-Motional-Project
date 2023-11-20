@@ -2,11 +2,56 @@
 
 import UIKit
 
-class FeedViewController: UIViewController, UITableViewDataSource {
+class FeedViewController: UIViewController, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+            return 1
+        }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+            return muscleOptions.count
+    }
+
+        // MARK: - UIPickerViewDelegate
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+            return muscleOptions[row]
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let selectedMuscle = muscleOptions[row].lowercased()
+        fetchExercises(forMuscle: selectedMuscle)
+    }
+
+    
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var musclePicker: UIPickerView!
+    
+    
+    
+    
+    
     private var exercises: [Exercise] = []
+    private var muscleOptions: [String] = [
+        "abdominals",
+        "abductors",
+        "adductors",
+        "biceps",
+        "calves",
+        "chest",
+        "forearms",
+        "glutes",
+        "hamstrings",
+        "lats",
+        "lower_back",
+        "middle_back",
+        "neck",
+        "quadriceps",
+        "traps",
+        "triceps"
+    ]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,8 +59,13 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         navigationController?.navigationBar.prefersLargeTitles = true
 
         tableView?.dataSource = self
-        fetchExercises()
+        musclePicker.delegate = self
+        musclePicker.dataSource = self
+        fetchExercises(forMuscle: muscleOptions[musclePicker.selectedRow(inComponent: 0)].lowercased())
+
+
     }
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exercises.count
@@ -41,22 +91,6 @@ class FeedViewController: UIViewController, UITableViewDataSource {
     }
 
 
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let selectedExercise = exercises[indexPath.row]
-//        print("Selected Exercise in FeedViewController: \(selectedExercise)")
-//
-//        // Instantiate DetailViewController from storyboard
-//        if let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
-//            // Set the exercise property
-//            detailVC.exercise = selectedExercise
-//
-//            // Push the DetailViewController onto the navigation stack
-//            navigationController?.pushViewController(detailVC, animated: true)
-//        }
-//    }
-
-    // Inside FeedViewController
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ExerciseDetailSegue" {
             if let indexPath = tableView.indexPathForSelectedRow {
@@ -70,23 +104,8 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         }
     }
 
-
-
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        guard segue.identifier == "ExerciseDetailSegue",
-    //              let indexPath = tableView.indexPathForSelectedRow else {
-    //            return
-    //        }
-    //
-    //        let selectedExercise = exercises[indexPath.row]
-    //
-    //        if let destinationVC = segue.destination as? DetailViewController {
-    //            destinationVC.exercise = selectedExercise
-    //        }
-    //    }
-
-    private func fetchExercises() {
-        guard let apiUrl = URL(string: "https://api.api-ninjas.com/v1/exercises?muscle=chest") else {
+    private func fetchExercises(forMuscle muscle: String) {
+        guard let apiUrl = URL(string: "https://api.api-ninjas.com/v1/exercises?muscle=\(muscle)") else {
             print("Invalid API URL")
             return
         }
