@@ -15,21 +15,29 @@
 
 ## Sprints
 
-Video:
-<div>
+**Sprint 1:**
+ - [x] created tab bar controller
+ -  [x] created home and profile viewcontrollers w/ table view and cells
+ - [x] implemented exercies api (TLDR: The Exercises API provides access a comprehensive list of thousands of exercises targeting every major muscle group.)
+
+**Things to Fix**
+ - [x] api doesn't print anything in table view cell
+       
+*Video:<div>*
     <a href="https://www.loom.com/share/bf1ebda81f91438697114042bcff4ff0">
     </a>
     <a href="https://www.loom.com/share/bf1ebda81f91438697114042bcff4ff0">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/bf1ebda81f91438697114042bcff4ff0-with-play.gif">
     </a>
   </div>
- 
- - [x] created tab bar controller
- -  [x] created home and profile viewcontrollers w/ table view and cells
- - [x] implemented exercies api (TLDR: The Exercises API provides access a comprehensive list of thousands of exercises targeting every major muscle group.)
 
-Things to Fix
- - [] api doesn't print anything in table view cell
+  **Sprint 2 (Last Sprint):**
+  - [x] Created Profile View Controller (users can put down their name, email, and goals and save them in the app)
+  - [x] Created A Favorites View Controller (users can save their exercises)
+  - [x] Can add the amount of sets and reps complete per favorite exercises
+        
+*Video:*
+ 
 
 ### App Evaluation
 
