@@ -8,27 +8,53 @@
 4. [Schema](#schema)
 
 ## Overview
-Video:
-<div>
+
+**Motional** is an app that seamlessly combines guided mindfulness meditation with easy-to-follow at-home workout routines. Users have the flexibility to tailor their sessions based on duration, difficulty level, and specific focus areas, fostering a comprehensive approach to mental and physical well-being.
+
+- Special thanks to API Ninjas, implemented Exercises API from them.
+
+*Demo* <div>
+    <a href="https://www.loom.com/share/d7be35a1eb694f04968bbbd09ea8a5db">
+    </a>
+    <a href="https://www.loom.com/share/d7be35a1eb694f04968bbbd09ea8a5db">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/d7be35a1eb694f04968bbbd09ea8a5db-with-play.gif">
+    </a>
+  </div>
+
+## Sprints
+
+**Sprint 1:**
+ - [x] created tab bar controller
+ -  [x] created home and profile viewcontrollers w/ table view and cells
+ - [x] implemented exercies api (TLDR: The Exercises API provides access a comprehensive list of thousands of exercises targeting every major muscle group.)
+
+**Things to Fix**
+ - [x] api doesn't print anything in table view cell
+       
+*Video:<div>*
     <a href="https://www.loom.com/share/bf1ebda81f91438697114042bcff4ff0">
     </a>
     <a href="https://www.loom.com/share/bf1ebda81f91438697114042bcff4ff0">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/bf1ebda81f91438697114042bcff4ff0-with-play.gif">
     </a>
   </div>
+
+  **Sprint 2 (Last Sprint):**
+  - [x] Added Launch Screen for Visual Appeal
+  - [x] Created Profile View Controller (users can put down their name, email, and goals and save them in the app)
+
+  **Future Plans with App**
+  - [x] Creat A Favorites View Controller (users can save their exercises)
+  - [x] Can add the amount of sets and reps complete per favorite exercises
+        
+*Video:*<div>
+    <a href="https://www.loom.com/share/29597536e3f54b54b1b722a0e3017ef5">
+    </a>
+    <a href="https://www.loom.com/share/29597536e3f54b54b1b722a0e3017ef5">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/29597536e3f54b54b1b722a0e3017ef5-with-play.gif">
+    </a>
+  </div>
  
- - [x] created tab bar controller
- -  [x] created home and profile viewcontrollers w/ table view and cells
- - [x] implemented exercies api (TLDR: The Exercises API provides access a comprehensive list of thousands of exercises targeting every major muscle group.)
-
-Things to Fix
- - [] api doesn't print anything in table view cell
- 
-![Mindful Motion Wireframes](https://cdn.discordapp.com/attachments/803439001138757642/1171924486409441420/IMG_0119.jpg?ex=655e72ba&is=654bfdba&hm=e30b8e6ad5b13248805ffa37fb6907956f13034e1e71758cc3aad35df492f8a6&)
-
-### Description
-
-**Motional** is an app that seamlessly combines guided mindfulness meditation with easy-to-follow at-home workout routines. Users have the flexibility to tailor their sessions based on duration, difficulty level, and specific focus areas, fostering a comprehensive approach to mental and physical well-being.
 
 ### App Evaluation
 
