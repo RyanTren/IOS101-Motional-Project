@@ -78,7 +78,11 @@ class FeedViewController: UIViewController, UITableViewDataSource, UIPickerViewD
       
 
         cell.nameLabel.text = exercise.name
+        cell.contentView.layer.cornerRadius = 5
+        cell.contentView.layer.masksToBounds = true
         
+        
+       
         return cell
     }
     
