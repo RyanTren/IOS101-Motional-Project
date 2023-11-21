@@ -28,10 +28,6 @@ class FeedViewController: UIViewController, UITableViewDataSource, UIPickerViewD
     
     @IBOutlet weak var musclePicker: UIPickerView!
     
-    
-    
-    
-    
     private var exercises: [Exercise] = []
     private var muscleOptions: [String] = [
         "abdominals",
@@ -62,10 +58,15 @@ class FeedViewController: UIViewController, UITableViewDataSource, UIPickerViewD
         musclePicker.delegate = self
         musclePicker.dataSource = self
         fetchExercises(forMuscle: muscleOptions[musclePicker.selectedRow(inComponent: 0)].lowercased())
-
-
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let selectedIndexPath = tableView.indexPathForSelectedRow{
+            tableView.deselectRow(at: selectedIndexPath, animated: animated)
+        }
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exercises.count
