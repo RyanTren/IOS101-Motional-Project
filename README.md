@@ -39,7 +39,13 @@
   - [x] Creat A Favorites View Controller (users can save their exercises)
   - [x] Can add the amount of sets and reps complete per favorite exercises
         
-*Video:*
+*Video:*<div>
+    <a href="https://www.loom.com/share/29597536e3f54b54b1b722a0e3017ef5">
+    </a>
+    <a href="https://www.loom.com/share/29597536e3f54b54b1b722a0e3017ef5">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/29597536e3f54b54b1b722a0e3017ef5-with-play.gif">
+    </a>
+  </div>
  
 
 ### App Evaluation
