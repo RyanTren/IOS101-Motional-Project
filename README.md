@@ -32,8 +32,11 @@
   </div>
 
   **Sprint 2 (Last Sprint):**
+  - [x] Added Launch Screen for Visual Appeal
   - [x] Created Profile View Controller (users can put down their name, email, and goals and save them in the app)
-  - [x] Created A Favorites View Controller (users can save their exercises)
+
+  **Future Plans with App**
+  - [x] Creat A Favorites View Controller (users can save their exercises)
   - [x] Can add the amount of sets and reps complete per favorite exercises
         
 *Video:*
