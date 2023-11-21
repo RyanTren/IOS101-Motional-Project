@@ -21,6 +21,7 @@
 		A548E5362B096EB100A9F149 /* MotionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548E5352B096EB100A9F149 /* MotionalTests.swift */; };
 		A548E5402B096EB100A9F149 /* MotionalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548E53F2B096EB100A9F149 /* MotionalUITests.swift */; };
 		A548E5422B096EB100A9F149 /* MotionalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548E5412B096EB100A9F149 /* MotionalUITestsLaunchTests.swift */; };
+		A56523332B0C4B3900D5F9F8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56523322B0C4B3900D5F9F8 /* FavoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A548E53B2B096EB100A9F149 /* MotionalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A548E53F2B096EB100A9F149 /* MotionalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionalUITests.swift; sourceTree = "<group>"; };
 		A548E5412B096EB100A9F149 /* MotionalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A56523322B0C4B3900D5F9F8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +115,12 @@
 				A548E5202B096EAF00A9F149 /* SceneDelegate.swift */,
 				A5443DA32B0975BB00E7348F /* FeedViewController.swift */,
 				A5443DA52B09B8E200E7348F /* DetailViewController.swift */,
-				A5443D9F2B09745800E7348F /* Exercise.swift */,
-				A5443DAE2B0C426C00E7348F /* UserProfile.swift */,
-				A5443DA12B09746C00E7348F /* ExerciseCell.swift */,
-				A548E5242B096EAF00A9F149 /* Main.storyboard */,
 				A5443DAC2B0C40F700E7348F /* editProfileViewController.swift */,
+				A56523322B0C4B3900D5F9F8 /* FavoritesViewController.swift */,
+				A5443D9F2B09745800E7348F /* Exercise.swift */,
+				A5443DA12B09746C00E7348F /* ExerciseCell.swift */,
+				A5443DAE2B0C426C00E7348F /* UserProfile.swift */,
+				A548E5242B096EAF00A9F149 /* Main.storyboard */,
 				A548E5292B096EB100A9F149 /* LaunchScreen.storyboard */,
 				A548E5272B096EB100A9F149 /* Assets.xcassets */,
 				A548E52C2B096EB100A9F149 /* Info.plist */,
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5443DA02B09745800E7348F /* Exercise.swift in Sources */,
+				A56523332B0C4B3900D5F9F8 /* FavoritesViewController.swift in Sources */,
 				A548E51F2B096EAF00A9F149 /* AppDelegate.swift in Sources */,
 				A5443DAD2B0C40F700E7348F /* editProfileViewController.swift in Sources */,
 				A5443DA22B09746C00E7348F /* ExerciseCell.swift in Sources */,
