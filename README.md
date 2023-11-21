@@ -9,7 +9,7 @@
 
 ## Overview
 
-Motional is an app for all gym-goers that find doing the same exercises boring! With our app you can find new exercises and learn how to do them. We offer a wide selection of muscle groups you can train!
+**Motional** is an app that seamlessly combines guided mindfulness meditation with easy-to-follow at-home workout routines. Users have the flexibility to tailor their sessions based on duration, difficulty level, and specific focus areas, fostering a comprehensive approach to mental and physical well-being.
 
 - Special thanks to API Ninjas, implemented Exercises API from them.
 
@@ -30,11 +30,6 @@ Video:
 
 Things to Fix
  - [] api doesn't print anything in table view cell
-
-
-### Description
-
-**Motional** is an app that seamlessly combines guided mindfulness meditation with easy-to-follow at-home workout routines. Users have the flexibility to tailor their sessions based on duration, difficulty level, and specific focus areas, fostering a comprehensive approach to mental and physical well-being.
 
 ### App Evaluation
 
