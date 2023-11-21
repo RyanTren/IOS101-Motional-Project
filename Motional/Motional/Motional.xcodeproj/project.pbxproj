@@ -112,8 +112,8 @@
 				A5443D9F2B09745800E7348F /* Exercise.swift */,
 				A5443DA12B09746C00E7348F /* ExerciseCell.swift */,
 				A548E5242B096EAF00A9F149 /* Main.storyboard */,
-				A548E5272B096EB100A9F149 /* Assets.xcassets */,
 				A548E5292B096EB100A9F149 /* LaunchScreen.storyboard */,
+				A548E5272B096EB100A9F149 /* Assets.xcassets */,
 				A548E52C2B096EB100A9F149 /* Info.plist */,
 			);
 			path = Motional;
