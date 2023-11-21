@@ -13,6 +13,14 @@
 
 - Special thanks to API Ninjas, implemented Exercises API from them.
 
+*Demo* <div>
+    <a href="https://www.loom.com/share/d7be35a1eb694f04968bbbd09ea8a5db">
+    </a>
+    <a href="https://www.loom.com/share/d7be35a1eb694f04968bbbd09ea8a5db">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/d7be35a1eb694f04968bbbd09ea8a5db-with-play.gif">
+    </a>
+  </div>
+
 ## Sprints
 
 **Sprint 1:**
